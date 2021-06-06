@@ -12,7 +12,8 @@ public class AddTwoNumbers {
 		
 		System.out.println("Enter second number");		
 		int num2 = scan.nextInt();
-		 System.out.println("Sum of the numbers: "+(num1 + num2));
+		
+		System.out.println("Sum of the numbers: "+(num1 + num2));
 
 	}
 
