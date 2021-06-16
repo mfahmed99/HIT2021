@@ -11,6 +11,7 @@ import java.util.Scanner;
  * 3. Create an association btw the using class (PaintBrush) and the hierarchical class
  * 4. 
  * OOA principles used
+ * 1. INheritance 2. Association
  * 
  */
 public class GoodBrush {
@@ -28,14 +29,22 @@ public class GoodBrush {
 
 }
 
-class GoodPaintBrush{ // in this the code is not modified whnever new paint is chosen
+class GoodPaintBrush{ // in this the code is not modified whenever new paint is chosen
 	Paint p;
 	public void doPaint() {
 		System.out.println(p);
 	}
 }
-
-class Paint{
+/*
+ * 100% the parent class should be declared abstract
+ * Abstract class is a special class used to represent the oarent class
+ * it is a classifier class 
+ * it provides the overview of the hierarchy which we create by extending this class
+ * We cannot create an object of this class
+ * There is no compulsion to have any code inside the abstract class
+ * 
+ */
+abstract class Paint{
 	
 }
 

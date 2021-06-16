@@ -15,7 +15,7 @@ public class FanDemo {
 			System.out.println("Press a key and enter to pull chain...");
 			scan.next();
 			shaitan.pull();
-		} */
+		}*/
 		
 		GoodFan gf=new GoodFan();
 		On on=new On();
