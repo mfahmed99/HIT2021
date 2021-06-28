@@ -20,7 +20,7 @@ class AccessDemoSubClass extends AccessDemo { //I have vreated a subclass
 		System.out.println(pub);
 		System.out.println(pro);
 		System.out.println(nomod);
-		System.out.println(pri);// pri is not visible
+		//System.out.println(pri);// pri is not visible
 
 	}
 }
@@ -31,7 +31,7 @@ class AccessDemoNonSubClass {
 		System.out.println(obj.pub);
 		System.out.println(obj.pro);
 		System.out.println(obj.nomod);
-		System.out.println(obj.pri); // pri not available
+		//System.out.println(obj.pri); // pri not available
 	}
 }
 
