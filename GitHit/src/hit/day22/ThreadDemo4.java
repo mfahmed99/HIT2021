@@ -48,6 +48,7 @@ class ReservationCounter {
 		String name=t.getName();
 		System.out.println(name+" has come to book the ticket...");
 		System.out.println(name+ "brought..."+amnt);
+		
 	}
 	
 	public void giveChange(int amnt) {
