@@ -3,7 +3,7 @@ package hit.day14;
 public class ExceptionDemo2 {
 	public static void main(String[] args) {
 		System.out.println("Before Exception...");
-		//Integer.parseInt - will convert string to a number
+		//Integer . parseInt - will convert string to a number
 		int num=0;
 		try {
 			num=Integer.parseInt(args[0]);//the program gets terminated at this point
@@ -34,8 +34,10 @@ public class ExceptionDemo2 {
 		System.out.println("Value of i is...:"+num);
 		System.out.println("After exception...");
 	
-	}
+	
 }
+}
+
 
 //we want to eliminate if-else-if
 /*
