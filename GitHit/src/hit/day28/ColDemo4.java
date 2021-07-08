@@ -1,6 +1,7 @@
 package hit.day28;
 //homework - stack and queue
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -21,7 +22,7 @@ public class ColDemo4 {
 	public static void main(String[] args) {
 		
 		//Set<String> set=new HashSet<String>();
-		Set<String> set=new TreeSet<String>();//arranged in order
+		Set<String> set=new TreeSet<String>(new MyComparator());//arranged in order
 		set.add("hello");
 		set.add("hi");
 		set.add("hello");// wont add as we cannot have duplicates
@@ -42,5 +43,14 @@ public class ColDemo4 {
 		for(String s:set) {
 			System.out.println(s);
 		}
+	}
+}
+
+class MyComparator implements Comparator<String> {
+	@Override
+	public int compare(String o1, String o2) {
+		
+		//return o1.compareTo(o2) ;// ascending order sorting of set elements
+		return o2.compareTo(o1);// descending order sorting of elements
 	}
 }
